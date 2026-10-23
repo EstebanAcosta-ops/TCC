@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión | Mercadito</title><link rel="stylesheet" href="login.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="auth.js" defer></script>
+</head>
+<body class="auth-page">
+  <a class="brand auth-brand" href="index.html"><span class="brand-mark">M</span> mercadito<span class="brand-dot">.</span></a>
+  <main class="auth-layout">
+    <section class="auth-aside"><span class="eyebrow">QUÉ BUENO VERTE</span><h1>Tu próximo<br>gran hallazgo<br><em>te espera.</em></h1><p>Entra a tu cuenta para explorar publicaciones y administrar tus productos.</p><div class="aside-decoration"><div class="circle"></div><div class="mini-bag">m.</div><span>♡</span></div></section>
+    <section class="auth-card"><a class="back-link" href="index.html">← Volver al inicio</a><span class="eyebrow">BIENVENIDO DE NUEVO</span><h2>Iniciar sesión</h2><p class="auth-intro">Ingresa tus datos para continuar.</p>
+      <form id="login-form" class="auth-form">
+        <label>Correo electrónico<input name="email" type="email" autocomplete="email" required placeholder="tu@correo.com"></label>
+        <label>Contraseña<input name="password" type="password" autocomplete="current-password" required minlength="6" placeholder="Tu contraseña"></label>
+        <button class="button" type="submit">Entrar a mi cuenta <span>→</span></button>
+        <p id="auth-message" class="form-message" role="status"></p>
+      </form>
+      <p class="switch-auth">¿Aún no tienes cuenta? <a href="registro.html">Regístrate gratis</a></p>
+      <p class="demo-note">Para la demostración, crea una cuenta con un correo al que tengas acceso.</p>
+    </section>
+  </main>
+</body>
+</html>

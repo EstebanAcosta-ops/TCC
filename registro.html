@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta | Mercadito</title><link rel="stylesheet" href="registro.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="auth.js" defer></script>
+</head>
+<body class="auth-page">
+  <a class="brand auth-brand" href="index.html"><span class="brand-mark">M</span> mercadito<span class="brand-dot">.</span></a>
+  <main class="auth-layout">
+    <section class="auth-aside"><span class="eyebrow">ÚNETE A LA COMUNIDAD</span><h1>Vende lo que<br>ya no usas.<br><em>Encuentra más.</em></h1><p>Crea tu perfil, publica productos y conecta directamente con otros usuarios.</p><div class="aside-decoration"><div class="circle"></div><div class="mini-bag">m.</div><span>✦</span></div></section>
+    <section class="auth-card"><a class="back-link" href="index.html">← Volver al inicio</a><span class="eyebrow">EMPIEZA EN UN MOMENTO</span><h2>Crear cuenta</h2><p class="auth-intro">Completa tus datos para unirte a Mercadito.</p>
+      <form id="register-form" class="auth-form">
+        <label>Nombre completo<input name="full_name" autocomplete="name" required minlength="3" maxlength="100" placeholder="Ej. Ana María Pérez"></label>
+        <label>Correo electrónico<input name="email" type="email" autocomplete="email" required placeholder="tu@correo.com"></label>
+        <label>Forma de contacto<input name="contact" required maxlength="120" placeholder="Teléfono o usuario de mensajería"></label>
+        <label>Contraseña<input name="password" type="password" autocomplete="new-password" required minlength="6" placeholder="Mínimo 6 caracteres"></label>
+        <button class="button" type="submit">Crear mi cuenta <span>→</span></button>
+        <p id="auth-message" class="form-message" role="status"></p>
+      </form>
+      <p class="switch-auth">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+      <p class="demo-note">Tu forma de contacto será visible en tus publicaciones. No compartas información que no quieras hacer pública.</p>
+    </section>
+  </main>
+</body>
+</html>
